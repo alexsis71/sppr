@@ -97,15 +97,6 @@ border: 1px solid #ba7c00;
 border-bottom: 0;
 }
 
-.view-description {
-font-style: italic;
-font-weight: normal;
-}
-
-.field-description {
-font-style: italic;
-}
-
 .table th,
 .table .title,
 .table .label{
@@ -239,45 +230,38 @@ max-width: 500px;
 <table id="api.v_consumer_district" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_district</strong>
- <br>
- <span class="view-description">Связь потребителя и региона</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>district_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор региона</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_districts">api.v_districts</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li></td>
  </tr>
  </table>
@@ -289,45 +273,38 @@ max-width: 500px;
 <table id="api.v_consumer_grs" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_grs</strong>
- <br>
- <span class="view-description">Связь потребителя и газораспределительной станции</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>grs_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газораспределительной станции</td>
  </tr>
  <tr>
  <td>grs_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газораспределительной станции</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_grs">api.v_grs</a></li></td>
  </tr>
  </table>
@@ -339,45 +316,38 @@ max-width: 500px;
 <table id="api.v_consumer_gto" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_gto</strong>
- <br>
- <span class="view-description">Связь потребителя и газотранспортного общества</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_gtos">api.v_gtos</a></li></td>
  </tr>
  </table>
@@ -389,45 +359,38 @@ max-width: 500px;
 <table id="api.v_consumer_industry" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_industry</strong>
- <br>
- <span class="view-description">Связь потребителя и вида промышленности</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>industry_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор вида промышленности</td>
  </tr>
  <tr>
  <td>industry_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Вид промышленности</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_industries">api.v_industries</a></li></td>
  </tr>
  </table>
@@ -439,50 +402,42 @@ max-width: 500px;
 <table id="api.v_consumer_possibility" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_possibility</strong>
- <br>
- <span class="view-description">Вероятность реализации потребительского сценария</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>cp_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя и вероятности</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>possibility_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор вероятности реализации</td>
  </tr>
  <tr>
  <td>possibility_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Вероятность реализации</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_implement_possibility">api.v_implement_possibility</a></li>, <a href="#api.v_versions">api.v_versions</a></li></td>
  </tr>
  </table>
@@ -494,80 +449,66 @@ max-width: 500px;
 <table id="api.v_consumer_provider_data_full" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumer_provider_data_full</strong>
- <br>
- <span class="view-description">Данные поставок от поставщика потребителю по сценарию</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>provider_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор поставщика</td>
  </tr>
  <tr>
  <td>provider_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование поставщика</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>unit_code</td>
  <td class="data-type">text</td>
- <td class="field-description">Код единицы измерения</td>
  </tr>
  <tr>
  <td>mm</td>
  <td class="data-type">numeric</td>
- <td class="field-description">Месяц</td>
  </tr>
  <tr>
  <td>yyyy</td>
  <td class="data-type">numeric</td>
- <td class="field-description">Год</td>
  </tr>
  <tr>
  <td>period_id</td>
  <td class="data-type">text</td>
- <td class="field-description">Код периода</td>
  </tr>
  <tr>
  <td>value</td>
  <td class="data-type">numeric</td>
- <td class="field-description">Значение</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_reference.measure_units">data_reference.measure_units</a></li>, <a href="#data_timeseries.objects_timeseries">data_timeseries.objects_timeseries</a></li>, <a href="#api.v_consumers_providers">api.v_consumers_providers</a></li>, <a href="#api.v_versions_1">api.v_versions_1</a></li></td>
  </tr>
  </table>
@@ -579,40 +520,34 @@ max-width: 500px;
 <table id="api.v_consumers" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers</strong>
- <br>
- <span class="view-description">Перечень потребителей</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -624,45 +559,38 @@ max-width: 500px;
 <table id="api.v_consumers_directions" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_directions</strong>
- <br>
- <span class="view-description">Связь потребителя и направления поставок</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>direction_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор направления поставок</td>
  </tr>
  <tr>
  <td>direction_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование направления поставок</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_directions">api.v_directions</a></li></td>
  </tr>
  </table>
@@ -674,85 +602,70 @@ max-width: 500px;
 <table id="api.v_consumers_full" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_full</strong>
- <br>
- <span class="view-description">Расширенные сведения о потребителе</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>hash_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор записи</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>consumer_desc</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание потребителя</td>
  </tr>
  <tr>
  <td>providers_names</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименования поставщиков</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  <tr>
  <td>industry_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Вид промышленности</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#api.v_consumer_district">api.v_consumer_district</a></li>, <a href="#api.v_consumer_industry">api.v_consumer_industry</a></li>, <a href="#api.v_consumers_providers">api.v_consumers_providers</a></li>, <a href="#api.v_model_trains">api.v_model_trains</a></li>, <a href="#api.v_consumers_models">api.v_consumers_models</a></li></td>
  </tr>
  </table>
@@ -764,50 +677,42 @@ max-width: 500px;
 <table id="api.v_consumers_manufactuters" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_manufactuters</strong>
- <br>
- <span class="view-description">Связь потребителя и производителя газа</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>cm_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя и производителя</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>manufacturer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор производителя газа</td>
  </tr>
  <tr>
  <td>manufacturer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование производителя газа</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_manufacturers">api.v_manufacturers</a></li></td>
  </tr>
  </table>
@@ -819,95 +724,78 @@ max-width: 500px;
 <table id="api.v_consumers_models" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_models</strong>
- <br>
- <span class="view-description">Связь потребителя со сценарием и моделью газотранспортной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers_versions">api.v_consumers_versions</a></li>, <a href="#api.v_model_trains">api.v_model_trains</a></li></td>
  </tr>
  </table>
@@ -919,120 +807,98 @@ max-width: 500px;
 <table id="api.v_consumers_models_2" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_models_2</strong>
- <br>
- <span class="view-description">Расширенная связь потребителя со сценарием и шаблоном модели</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>template_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор шаблона</td>
  </tr>
  <tr>
  <td>pt_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи шаблона</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>cv_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя и сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  <tr>
  <td>section_order</td>
  <td class="data-type">integer</td>
- <td class="field-description">Порядок участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_pipeline_templates">api.v_pipeline_templates</a></li>, <a href="#api.v_consumers_versions">api.v_consumers_versions</a></li></td>
  </tr>
  </table>
@@ -1044,50 +910,42 @@ max-width: 500px;
 <table id="api.v_consumers_providers" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_providers</strong>
- <br>
- <span class="view-description">Связь потребителя и поставщика</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>relation_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>provider_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор поставщика</td>
  </tr>
  <tr>
  <td>provider_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование поставщика</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_providers">api.v_providers</a></li></td>
  </tr>
  </table>
@@ -1099,65 +957,54 @@ max-width: 500px;
 <table id="api.v_consumers_providers_manufactuters" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_providers_manufactuters</strong>
- <br>
- <span class="view-description">Связь потребителя, поставщика и производителя газа</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>cpm_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя, поставщика и производителя</td>
  </tr>
  <tr>
  <td>cp_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя и вероятности</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>provider_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор поставщика</td>
  </tr>
  <tr>
  <td>provider_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование поставщика</td>
  </tr>
  <tr>
  <td>manufacturer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор производителя газа</td>
  </tr>
  <tr>
  <td>manufacturer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование производителя газа</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers_providers">api.v_consumers_providers</a></li>, <a href="#api.v_manufacturers">api.v_manufacturers</a></li></td>
  </tr>
  </table>
@@ -1169,45 +1016,38 @@ max-width: 500px;
 <table id="api.v_consumers_status" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_status</strong>
- <br>
- <span class="view-description">Связь потребителя и его статуса</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>status_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор статуса потребителя</td>
  </tr>
  <tr>
  <td>status_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Статус потребителя</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_statuses">api.v_statuses</a></li></td>
  </tr>
  </table>
@@ -1219,50 +1059,42 @@ max-width: 500px;
 <table id="api.v_consumers_versions" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_consumers_versions</strong>
- <br>
- <span class="view-description">Связь потребителя и сценария</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>cv_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи потребителя и сценария</td>
  </tr>
  <tr>
  <td>consumer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор потребителя</td>
  </tr>
  <tr>
  <td>consumer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование потребителя</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_consumers">api.v_consumers</a></li>, <a href="#api.v_versions_1">api.v_versions_1</a></li></td>
  </tr>
  </table>
@@ -1274,40 +1106,34 @@ max-width: 500px;
 <table id="api.v_directions" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_directions</strong>
- <br>
- <span class="view-description">Перечень направлений поставок</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>direction_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор направления поставок</td>
  </tr>
  <tr>
  <td>direction_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование направления поставок</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -1319,40 +1145,34 @@ max-width: 500px;
 <table id="api.v_districts" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_districts</strong>
- <br>
- <span class="view-description">Перечень регионов</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>district_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор региона</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -1364,50 +1184,42 @@ max-width: 500px;
 <table id="api.v_districts_federal_districts" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_districts_federal_districts</strong>
- <br>
- <span class="view-description">Связь региона и федерального округа</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>dfd_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи региона и федерального округа</td>
  </tr>
  <tr>
  <td>federal_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор федерального округа</td>
  </tr>
  <tr>
  <td>federal_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование федерального округа</td>
  </tr>
  <tr>
  <td>district_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор региона</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_districts">api.v_districts</a></li>, <a href="#api.v_federal_districts">api.v_federal_districts</a></li></td>
  </tr>
  </table>
@@ -1419,40 +1231,34 @@ max-width: 500px;
 <table id="api.v_federal_districts" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_federal_districts</strong>
- <br>
- <span class="view-description">Перечень федеральных округов</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>federal_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор федерального округа</td>
  </tr>
  <tr>
  <td>federal_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование федерального округа</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -1464,45 +1270,38 @@ max-width: 500px;
 <table id="api.v_field_district" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_field_district</strong>
- <br>
- <span class="view-description">Связь месторождения и региона</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>district_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор региона</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_districts">api.v_districts</a></li>, <a href="#api.v_fields">api.v_fields</a></li></td>
  </tr>
  </table>
@@ -1514,80 +1313,66 @@ max-width: 500px;
 <table id="api.v_field_pipeline_trains" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_field_pipeline_trains</strong>
- <br>
- <span class="view-description">Связь месторождения с участком газопроводной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>train_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газотранспортной системы</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_pipeline_trains">api.v_pipeline_trains</a></li></td>
  </tr>
  </table>
@@ -1599,50 +1384,42 @@ max-width: 500px;
 <table id="api.v_field_subsoil" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_field_subsoil</strong>
- <br>
- <span class="view-description">Связь месторождения и недропользователя</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>fsu_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи месторождения и недропользователя</td>
  </tr>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>subsoil_user_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор недропользователя</td>
  </tr>
  <tr>
  <td>subsoil_user_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование недропользователя</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_subsoil_users">api.v_subsoil_users</a></li></td>
  </tr>
  </table>
@@ -1654,50 +1431,42 @@ max-width: 500px;
 <table id="api.v_field_subsoils" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_field_subsoils</strong>
- <br>
- <span class="view-description">Расширенные сведения о месторождении и недропользователе</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>district_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование региона</td>
  </tr>
  <tr>
  <td>subsoil_user_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование недропользователя</td>
  </tr>
  <tr>
  <td>field_desc</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание месторождения</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_districts">api.v_districts</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_subsoil_users">api.v_subsoil_users</a></li></td>
  </tr>
  </table>
@@ -1709,40 +1478,34 @@ max-width: 500px;
 <table id="api.v_fields" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields</strong>
- <br>
- <span class="view-description">Перечень месторождений</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -1754,100 +1517,82 @@ max-width: 500px;
 <table id="api.v_fields_data" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields_data</strong>
- <br>
- <span class="view-description">Данные параметров месторождений по сценариям</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>subsoil_user_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор недропользователя</td>
  </tr>
  <tr>
  <td>subsoil_user_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование недропользователя</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>param_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор параметра</td>
  </tr>
  <tr>
  <td>series_time</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата и время значения</td>
  </tr>
  <tr>
  <td>yy</td>
  <td class="data-type">double precision</td>
- <td class="field-description">Год</td>
  </tr>
  <tr>
  <td>mm</td>
  <td class="data-type">double precision</td>
- <td class="field-description">Месяц</td>
  </tr>
  <tr>
  <td>param_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование параметра</td>
  </tr>
  <tr>
  <td>param_type</td>
  <td class="data-type">text</td>
- <td class="field-description">Тип параметра</td>
  </tr>
  <tr>
  <td>value</td>
  <td class="data-type">numeric</td>
- <td class="field-description">Значение</td>
  </tr>
  <tr>
  <td>period_id</td>
  <td class="data-type">text</td>
- <td class="field-description">Код периода</td>
  </tr>
  <tr>
  <td>unit_code</td>
  <td class="data-type">text</td>
- <td class="field-description">Код единицы измерения</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_reference.measure_units">data_reference.measure_units</a></li>, <a href="#data_timeseries.objects_timeseries">data_timeseries.objects_timeseries</a></li>, <a href="#data_reference.parameters">data_reference.parameters</a></li>, <a href="#api.v_field_subsoil">api.v_field_subsoil</a></li>, <a href="#api.v_versions_1">api.v_versions_1</a></li></td>
  </tr>
  </table>
@@ -1859,100 +1604,82 @@ max-width: 500px;
 <table id="api.v_fields_models" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields_models</strong>
- <br>
- <span class="view-description">Связь месторождения со сценарием и моделью газотранспортной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_model_trains">api.v_model_trains</a></li>, <a href="#api.v_fields_versions">api.v_fields_versions</a></li></td>
  </tr>
  </table>
@@ -1964,120 +1691,98 @@ max-width: 500px;
 <table id="api.v_fields_models_2" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields_models_2</strong>
- <br>
- <span class="view-description">Расширенная связь месторождения со сценарием и шаблоном модели</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>template_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор шаблона</td>
  </tr>
  <tr>
  <td>pt_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи шаблона</td>
  </tr>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>fv_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи месторождения и сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  <tr>
  <td>section_order</td>
  <td class="data-type">integer</td>
- <td class="field-description">Порядок участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_pipeline_templates">api.v_pipeline_templates</a></li>, <a href="#api.v_fields_versions">api.v_fields_versions</a></li></td>
  </tr>
  </table>
@@ -2089,50 +1794,42 @@ max-width: 500px;
 <table id="api.v_fields_versions" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields_versions</strong>
- <br>
- <span class="view-description">Связь месторождения и сценария</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>fv_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи месторождения и сценария</td>
  </tr>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_versions_1">api.v_versions_1</a></li></td>
  </tr>
  </table>
@@ -2144,85 +1841,70 @@ max-width: 500px;
 <table id="api.v_fields_versions_full" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_fields_versions_full</strong>
- <br>
- <span class="view-description">Расширенные сведения о сценариях месторождения</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>fv_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи месторождения и сценария</td>
  </tr>
  <tr>
  <td>field_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор месторождения</td>
  </tr>
  <tr>
  <td>field_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование месторождения</td>
  </tr>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>parent_version</td>
  <td class="data-type">text</td>
- <td class="field-description">Родительский сценарий</td>
  </tr>
  <tr>
  <td>author_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Автор</td>
  </tr>
  <tr>
  <td>begin_date</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата начала</td>
  </tr>
  <tr>
  <td>end_date</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата окончания</td>
  </tr>
  <tr>
  <td>begin_period</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Начальный период</td>
  </tr>
  <tr>
  <td>end_period</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Конечный период</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_fields">api.v_fields</a></li>, <a href="#api.v_versions">api.v_versions</a></li></td>
  </tr>
  </table>
@@ -2234,40 +1916,34 @@ max-width: 500px;
 <table id="api.v_grs" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_grs</strong>
- <br>
- <span class="view-description">Перечень газораспределительных станций</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>grs_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газораспределительной станции</td>
  </tr>
  <tr>
  <td>grs_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газораспределительной станции</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2279,40 +1955,34 @@ max-width: 500px;
 <table id="api.v_gtos" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_gtos</strong>
- <br>
- <span class="view-description">Перечень газотранспортных обществ</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2324,40 +1994,34 @@ max-width: 500px;
 <table id="api.v_implement_possibility" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_implement_possibility</strong>
- <br>
- <span class="view-description">Перечень вероятностей реализации</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>possibility_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор вероятности реализации</td>
  </tr>
  <tr>
  <td>possibility_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Вероятность реализации</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2369,40 +2033,34 @@ max-width: 500px;
 <table id="api.v_industries" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_industries</strong>
- <br>
- <span class="view-description">Перечень видов промышленности</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>industry_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор вида промышленности</td>
  </tr>
  <tr>
  <td>industry_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Вид промышленности</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2414,40 +2072,34 @@ max-width: 500px;
 <table id="api.v_manufacturers" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_manufacturers</strong>
- <br>
- <span class="view-description">Перечень производителей газа</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>manufacturer_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор производителя газа</td>
  </tr>
  <tr>
  <td>manufacturer_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование производителя газа</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2459,80 +2111,66 @@ max-width: 500px;
 <table id="api.v_model_trains" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_model_trains</strong>
- <br>
- <span class="view-description">Связь модели и участка газотранспортной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>train_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газотранспортной системы</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_models">api.v_models</a></li>, <a href="#api.v_pipeline_trains">api.v_pipeline_trains</a></li></td>
  </tr>
  </table>
@@ -2544,45 +2182,38 @@ max-width: 500px;
 <table id="api.v_models" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_models</strong>
- <br>
- <span class="view-description">Перечень моделей</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>global_version</td>
  <td class="data-type">text</td>
- <td class="field-description">Глобальная версия</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li>, <a href="#data_master.objects_attributes">data_master.objects_attributes</a></li></td>
  </tr>
  </table>
@@ -2594,50 +2225,42 @@ max-width: 500px;
 <table id="api.v_models_full" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_models_full</strong>
- <br>
- <span class="view-description">Расширенные сведения о моделях</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>author_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Автор</td>
  </tr>
  <tr>
  <td>change_date</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата изменения</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects_attributes">data_master.objects_attributes</a></li>, <a href="#api.v_models">api.v_models</a></li></td>
  </tr>
  </table>
@@ -2649,90 +2272,74 @@ max-width: 500px;
 <table id="api.v_pipeline_templates" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_pipeline_templates</strong>
- <br>
- <span class="view-description">Шаблоны структуры газотранспортной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>pt_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор связи шаблона</td>
  </tr>
  <tr>
  <td>template_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор шаблона</td>
  </tr>
  <tr>
  <td>model_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор модели</td>
  </tr>
  <tr>
  <td>model_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование модели</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>section_order</td>
  <td class="data-type">integer</td>
- <td class="field-description">Порядок участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#data_master.pipeline_templates">data_master.pipeline_templates</a></li>, <a href="#api.v_models">api.v_models</a></li></td>
  </tr>
  </table>
@@ -2744,70 +2351,58 @@ max-width: 500px;
 <table id="api.v_pipeline_trains" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_pipeline_trains</strong>
- <br>
- <span class="view-description">Перечень участков газотранспортной системы</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>train_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газотранспортной системы</td>
  </tr>
  <tr>
  <td>gto_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор газотранспортного общества</td>
  </tr>
  <tr>
  <td>gto_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование газотранспортного общества</td>
  </tr>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_relations.relation_types">data_relations.relation_types</a></li>, <a href="#data_relations.relations">data_relations.relations</a></li>, <a href="#api.v_pipelines">api.v_pipelines</a></li>, <a href="#api.v_sections">api.v_sections</a></li>, <a href="#api.v_specs">api.v_specs</a></li>, <a href="#api.v_gtos">api.v_gtos</a></li></td>
  </tr>
  </table>
@@ -2819,40 +2414,34 @@ max-width: 500px;
 <table id="api.v_pipelines" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_pipelines</strong>
- <br>
- <span class="view-description">Перечень магистральных газопроводов</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>pipeline_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор магистрального газопровода</td>
  </tr>
  <tr>
  <td>pipeline_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование магистрального газопровода</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2864,40 +2453,34 @@ max-width: 500px;
 <table id="api.v_providers" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_providers</strong>
- <br>
- <span class="view-description">Перечень поставщиков</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>provider_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор поставщика</td>
  </tr>
  <tr>
  <td>provider_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование поставщика</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2909,40 +2492,34 @@ max-width: 500px;
 <table id="api.v_sections" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_sections</strong>
- <br>
- <span class="view-description">Перечень участков газопроводов</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>section_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор участка газопровода</td>
  </tr>
  <tr>
  <td>section_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование участка газопровода</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2954,40 +2531,34 @@ max-width: 500px;
 <table id="api.v_specs" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_specs</strong>
- <br>
- <span class="view-description">Перечень характеристик участков газопроводов</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>spec_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор характеристики участка</td>
  </tr>
  <tr>
  <td>spec_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование характеристики участка</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -2999,40 +2570,34 @@ max-width: 500px;
 <table id="api.v_statuses" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_statuses</strong>
- <br>
- <span class="view-description">Перечень статусов потребителей</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>status_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор статуса потребителя</td>
  </tr>
  <tr>
  <td>status_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Статус потребителя</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -3044,40 +2609,34 @@ max-width: 500px;
 <table id="api.v_subsoil_users" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_subsoil_users</strong>
- <br>
- <span class="view-description">Перечень недропользователей</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>subsoil_user_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор недропользователя</td>
  </tr>
  <tr>
  <td>subsoil_user_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование недропользователя</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -3089,70 +2648,58 @@ max-width: 500px;
 <table id="api.v_versions" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_versions</strong>
- <br>
- <span class="view-description">Расширенные сведения о сценариях</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  <tr>
  <td>parent_version</td>
  <td class="data-type">text</td>
- <td class="field-description">Родительский сценарий</td>
  </tr>
  <tr>
  <td>author_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Автор</td>
  </tr>
  <tr>
  <td>begin_date</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата начала</td>
  </tr>
  <tr>
  <td>end_date</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Дата окончания</td>
  </tr>
  <tr>
  <td>begin_period</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Начальный период</td>
  </tr>
  <tr>
  <td>end_period</td>
  <td class="data-type">timestamp</td>
- <td class="field-description">Конечный период</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li>, <a href="#data_master.objects_attributes">data_master.objects_attributes</a></li></td>
  </tr>
  </table>
@@ -3164,40 +2711,34 @@ max-width: 500px;
 <table id="api.v_versions_1" class="view">
  <caption class="tab-name">
  <em>api</em>.<strong>v_versions_1</strong>
- <br>
- <span class="view-description">Перечень сценариев</span>
- <span class="type-label">Представление</span>
+ <span class="type-label">View</span>
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Расшифровка</th>
+ <th>Name</th>
+ <th>Data type</th>
  </tr>
  </thead>
  <tbody>
  <tr>
  <td>version_id</td>
  <td class="data-type">bigint</td>
- <td class="field-description">Идентификатор сценария</td>
  </tr>
  <tr>
  <td>version_name</td>
  <td class="data-type">text</td>
- <td class="field-description">Наименование сценария</td>
  </tr>
  <tr>
  <td>description</td>
  <td class="data-type">text</td>
- <td class="field-description">Описание</td>
  </tr>
  </tbody>
  <tfoot>
  <tr>
- <td colspan="3" class="nested-tab-parent">
+ <td colspan="2" class="nested-tab-parent">
  <table class="nested-tab">
  <tr>
- <td class="label">Ссылки:</td>
+ <td class="label">References:</td>
  <td><a href="#data_master.objects">data_master.objects</a></li>, <a href="#data_reference.dictionaries">data_reference.dictionaries</a></li></td>
  </tr>
  </table>
@@ -3217,14 +2758,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3291,14 +2832,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3405,14 +2946,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3529,14 +3070,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3603,14 +3144,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3698,14 +3239,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3792,14 +3333,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3852,14 +3393,14 @@ max-width: 500px;
  </caption>
  <thead>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
@@ -3936,14 +3477,14 @@ max-width: 500px;
  </td>
  </tr>
  <tr>
- <th>Название</th>
- <th>Тип данных</th>
- <th>Первичный ключ</th>
- <th>Внешний ключ</th>
- <th>Уникальность</th>
- <th>Обязательно</th>
- <th>Значение по умолчанию</th>
- <th>Описание</th>
+ <th>Name</th>
+ <th>Data type</th>
+ <th>PK</th>
+ <th>FK</th>
+ <th>UQ</th>
+ <th>Not null</th>
+ <th>Default value</th>
+ <th>Description</th>
  </tr>
  </thead>
  <tbody>
